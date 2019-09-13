@@ -197,11 +197,17 @@ section h2 {
 	padding: 0;
 	margin: 0;
 	display: flex;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
 	justify-content: space-between;
 	flex-flow: row wrap;
 	border-bottom: solid;
 	border-bottom-width: 2px;
+}
+
+@media screen and (max-width: 600px) {
+	.content_list {
+		flex-direction: column;
+	}
 }
 
 button {
